@@ -1,0 +1,10 @@
+#count the frequency of each character in a string
+string = input("enter a string: ")
+frequency = {}
+for char in string:
+    if char in frequency:
+        frequency[char] += 1
+    else:
+        frequency[char] = 1
+for char, count in frequency.items():
+    print(f"'{char}':{count}")
